@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import SelectedWork from "./components/SelectedWork";
 import Approach from "./components/Approach";
 import Features from "./components/Features";
 import Healthcare from "./components/Healthcare";
@@ -17,6 +18,7 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <SelectedWork />
         <Approach />
         <Features />
         <Healthcare />

@@ -1,7 +1,11 @@
+import palazzoImg from "./assets/work-palazzo.webp";
+import zenithImg from "./assets/work-zenith.webp";
+import xecutablesImg from "./assets/work-xecutables.webp";
+import dezinexpertImg from "./assets/work-dezinexpert.webp";
 import { Bot, BriefcaseBusiness, Code2, MessageCircle, Mic2, Workflow } from "lucide-react";
 
 export const navLinks = [
-  ["Home", "#home"], ["Services", "#services"], ["Approach", "#approach"],
+  ["Home", "#home"], ["Services", "#services"], ["Work", "#work"], ["Approach", "#approach"],
   ["Healthcare", "#healthcare"], ["FAQ", "#faq"], ["Contact", "#contact"],
 ];
 
@@ -23,4 +27,38 @@ export const faqs = [
   { q: "Can AI solutions work with our existing tools?", a: "Integration is part of the approach. We design connected solutions around your current workflows, systems, and business requirements." },
   { q: "Do you build solutions for healthcare organizations?", a: "Yes. Our healthcare work includes hospital marketing, patient acquisition, AI receptionists, appointment booking, WhatsApp automation, and CRM integration." },
   { q: "What happens after launch?", a: "Our process continues through optimization and ongoing support, so the solution can evolve with your team and your goals." },
+];
+
+// src: null leaves the screenshot frame empty. desc is optional (shown under the title when set).
+export const works = [
+  {
+    title: "Palazzo Lakeside Hotel", subtitle: "Hospitality / Web Design", href: "https://palazzolakesidehotel.com/",
+    src: palazzoImg, alt: "Palazzo Lakeside Hotel website screenshot",
+    meta: [{ label: "Industry", value: "Hospitality" }, { label: "Type", value: "Web Design" }]
+  },
+  {
+    title: "Zenith Holidays", subtitle: "Travel & Tourism / Web App", href: "https://www.zenithholidays.com/",
+    src: zenithImg, alt: "Zenith Holidays website screenshot",
+    meta: [{ label: "Industry", value: "Travel & Tourism" }, { label: "Type", value: "Web App" }]
+  },
+  {
+    title: "The Block Silverthorne", subtitle: "Real Estate / Web Design", href: "https://theblocksilverthorne.com/",
+    src: null, alt: "The Block Silverthorne website screenshot", // add a screenshot
+    meta: [{ label: "Industry", value: "Real Estate" }, { label: "Type", value: "Web Design" }]
+  },
+  {
+    title: "Xecutables", subtitle: "Tech Consulting / Web App", href: "https://www.xecutables.com/",
+    src: xecutablesImg, alt: "Xecutables website screenshot",
+    meta: [{ label: "Industry", value: "Tech Consulting" }, { label: "Type", value: "Web App" }]
+  },
+  {
+    title: "Sologix Energy", subtitle: "Energy Solutions / Web App", href: "https://www.sologixenergy.in/",
+    src: null, alt: "Sologix Energy website screenshot", // add a screenshot
+    meta: [{ label: "Industry", value: "Energy Solutions" }, { label: "Type", value: "Web App" }]
+  },
+  {
+    title: "Dezinexpert", subtitle: "Design Agency / Portfolio", href: "https://dezinexpert.com/",
+    src: dezinexpertImg, alt: "Dezinexpert website screenshot",
+    meta: [{ label: "Industry", value: "Design Agency" }, { label: "Type", value: "Portfolio" }]
+  },
 ];
